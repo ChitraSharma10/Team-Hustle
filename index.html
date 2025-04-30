@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task From Team Hustle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="img-folder/logo.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS (for sliders) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              
+                <img src="img-folder/logo.png" alt="" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Slider -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-slide" style="background-image:url('img-folder/image-1.png');">
+
+                <h1 data-aos="fade-up">Where the Stars Meet Sand</h1>
+                <button class="btn-1">CONTACT US</button>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image:url('img-folder/img-2.jpg')">
+                <h1 data-aos="fade-up">Luxury Tent Experience</h1>
+                <button class="btn-1">CONTACT US</button>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image:url('img-folder/image.png')">
+                <h1 data-aos="fade-up">Beyond Just a Stay</h1>
+                <button class="btn-1">CONTACT US</button>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image:url('img-folder/img-3.jpg')">
+                <h1 data-aos="fade-up">Your Safety, Our Priority</h1>
+                <button class="btn-1">CONTACT US</button>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <!-- Three-Column Section -->
+    <section class="py-5 bg-light">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-sm-4" data-aos="fade-up">
+                    <img src="img-folder/comfort.jpg" class="mb-3"
+                        style="border-radius: 7px; object-fit:cover; width: 90%; height: 250px;">
+                    <h4>Comfort</h4>
+                    <p>Top-class accommodation and beds.
+                        Enjoy restful nights with premium mattresses and plush linens.
+                        Designed for ultimate relaxation, every room offers a perfect blend of style and comfort.
+
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img-folder/security.jpg" class="mb-3"
+                        style="border-radius: 7px; object-fit:cover; width: 90%; height: 250px;">
+                    <h4>Security</h4>
+                    <p>24x7 professional monitoring service.
+                        Your safety is our priority, with real-time alerts and rapid response.
+                        Stay worry-free knowing expert support is always just a moment away.
+
+                    </p>
+                </div>
+                <div class="col-sm-4" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img-folder/nature.jpg" class="mb-3"
+                        style="border-radius: 7px; width: 90%; object-fit:cover; height: 250px;">
+                    <h4>Luxury</h4>
+                    <p>Enjoy modern amenities in nature.
+                        Surround yourself with serene landscapes without compromising on comfort.
+                        Perfect harmony of technology and tranquility for a refreshing escape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+
+    <section class="parallax-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Experience the Difference</h1>
+            <p>Comfort, Security, and Luxury—all in one place.
+                Experience modern living with smart features tailored to your lifestyle.
+                Step into a space where elegance meets peace of mind every day.
+                Would you like this for a brochure, website, or something else?</p>
+        </div>
+    </section>
+
+    <!-- Popup Section -->
+    <section class="popup-section">
+        <h2>Reliable Security Services</h2>
+        <div class="columns">
+
+            <div class="box">
+                <h3>24/7 Monitoring</h3>
+                <p>Stay protected every hour of the day with our state-of-the-art surveillance.</p>
+                <div class="plus-icon" onclick="openModal(0)">+</div>
+            </div>
+
+            <div class="box">
+                <h3>Access Control</h3>
+                <p>Secure entry systems for homes, offices, and private spaces.</p>
+                <div class="plus-icon" onclick="openModal(1)">+</div>
+            </div>
+
+            <div class="box">
+                <h3>Smart Alarm Systems</h3>
+                <p>Responsive alarms integrated with mobile apps for real-time alerts.</p>
+                <div class="plus-icon" onclick="openModal(2)">+</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="modal0">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(0)">&times;</span>
+            <h3>24/7 Monitoring</h3>
+            <p>Our expert team monitors your premises round-the-clock using HD cameras and AI-powered detection tools.
+                Real-time alerts are sent to your device and the nearest response unit is deployed within seconds.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h3>Access Control</h3>
+            <p>Biometric locks, RFID cards, and facial recognition technology help ensure only authorized individuals
+                can access secured zones. Customize entry times and receive instant access logs.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h3>Smart Alarm Systems</h3>
+            <p>From fire to intrusion, our smart alarms are designed to detect, notify, and escalate immediately. Mobile
+                app integration ensures you’re always in control—wherever you are.</p>
+        </div>
+    </div>
+
+
+
+    <!-- Custom Slider with Arrows -->
+    <div class="accordion-section">
+        <h2 class="section-title">Why Choose Our Security Services?</h2>
+
+        <div class="accordion" id="securityAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        24/7 Real-Time Monitoring
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#securityAccordion">
+                    <div class="accordion-body">
+                        Our expert team monitors your premises every second of the day with cutting-edge AI tools and
+                        instant alerts.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Advanced Access Control
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#securityAccordion">
+                    <div class="accordion-body">
+                        We use biometrics, smart cards, and facial recognition to secure your entry points from
+                        unauthorized access.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Fully Integrated Alarm Systems
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#securityAccordion">
+                    <div class="accordion-body">
+                        Alarms that respond instantly to threats and notify you through mobile apps and local emergency
+                        teams.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Custom slider section -->
+    <div class="slider-container">
+        <div class="slides" id="slides">
+            <!-- Slide 1 -->
+            <div class="slide"
+                style="background-image: url('https://images.pexels.com/photos/7962067/pexels-photo-7962067.jpeg')">
+                <div class="slide-content">
+                    <h2>Smart Surveillance</h2>
+                    <p>High-resolution cameras with night vision and motion detection to guard your premises
+                        round-the-clock.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide"
+                style="background-image: url('https://images.pexels.com/photos/8438915/pexels-photo-8438915.jpeg')">
+                <div class="slide-content">
+                    <h2>Biometric Access Control</h2>
+                    <p>Secure every door with biometric fingerprint and facial recognition authentication.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide"
+                style="background-image: url('https://images.pexels.com/photos/5380641/pexels-photo-5380641.jpeg')">
+                <div class="slide-content">
+                    <h2>AI-Based Intruder Alert</h2>
+                    <p>Real-time alerts powered by smart video analytics and AI-enabled threat detection.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide"
+                style="background-image: url('https://images.pexels.com/photos/7766149/pexels-photo-7766149.jpeg')">
+                <div class="slide-content">
+                    <h2>Remote Monitoring</h2>
+                    <p>24/7 live surveillance with mobile access to keep your business or home safe from anywhere in the
+                        world.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Navigation Arrows -->
+        <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+        <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+
+    <!-- Custom Navigation Arrows -->
+    <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+    <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+
+    <!-- Custom Navigation Arrows -->
+    <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+    <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+    <!-- Tabbed Content -->
+
+    <div class="container-fluid my-5" style="max-width: 80%;">
+        <ul class="nav nav-tabs justify-content-center fs-5 mb-4" id="tabContent" role="tablist" data-aos="fade-down"
+            data-aos-delay="100">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+                    role="tab">Overview</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                    role="tab">Features</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                    role="tab">Benefits</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+                    role="tab">Support</button>
+            </li>
+        </ul>
+
+        <div class="tab-content p-4 rounded shadow tab-box bg-white" id="tabContent">
+            <div class="tab-pane fade show active animate__animated animate__fadeIn" id="tab1" role="tabpanel"
+                data-aos="fade-up" data-aos-delay="150">
+                <h4 class="mb-3">Reliable Security for Every Space</h4>
+                <p>We offer smart surveillance, biometric access control, and AI-based monitoring tailored to homes,
+                    businesses, and institutions.</p>
+            </div>
+            <div class="tab-pane fade animate__animated animate__fadeIn" id="tab2" role="tabpanel" data-aos="fade-up"
+                data-aos-delay="200">
+                <h4 class="mb-3">Top Features</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">24/7 Monitoring & Emergency Response</li>
+                    <li class="list-group-item">Mobile App Integration</li>
+                    <li class="list-group-item">Cloud Video Storage</li>
+                    <li class="list-group-item">AI Facial & Motion Detection</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade animate__animated animate__fadeIn" id="tab3" role="tabpanel" data-aos="fade-up"
+                data-aos-delay="250">
+                <h4 class="mb-3">Customer Benefits</h4>
+                <p>Enhance safety, reduce risk, and enjoy peace of mind with our intelligent, automated security systems
+                    designed for modern lifestyles.</p>
+            </div>
+            <div class="tab-pane fade animate__animated animate__fadeIn" id="tab4" role="tabpanel" data-aos="fade-up"
+                data-aos-delay="300">
+                <h4 class="mb-3">24/7 Support</h4>
+                <p>Our support team is available around the clock for installation, maintenance, and emergency
+                    assistance. We're just a call away!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="img-folder/logo.png" alt="Logo" class="logo">
+            <p>Comfort, Security, and Luxury—all in one place. </p>
+            <div class="social-media">
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="links-column">
+                <!-- <h3>OUR PROGRAMS</h3> -->
+                <ul>
+                    <li><a href="#">2 Days Jeep & Hiking In Nomad’s Land</a></li>
+                    <li><a href="#">3 Hours Jeep Tour </a></li>
+                    <li><a href="#">6 Hours Jeep Tour </a></li>
+                    <li><a href="#">Hiking & Scrambling</a></li>
+                    <li><a href="#">Hot Air Balloon Ride</a></li>
+                    <li><a href="#">Deluxe Tents</a></li>
+                    <li><a href="#">Martin Tents</a></li>
+
+                </ul>
+            </div>
+            <div class="links-column">
+                <!-- <h3>QUICKS LINKS</h3> -->
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Our Team </a></li>
+                    <li><a href="#">Wadi Rum</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="links-column">
+                <!-- <h3>CONTACT US</h3> -->
+                <ul>
+                    <li><a href="#"> <i class="fa-solid fa-location-dot"></i> Mohammed Hammad AL
+                            ZALABIEH</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> +962 (0) 772 660 319</a></li>
+                    <li><a href="mailto:info@wadirumbedouincamp.com"> <i class="fa-solid fa-envelope"></i>
+                            info@wadirumbedouincamp.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-4 last">
+        <p class="mb-0">&copy; 2025 DesertEscape. All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        // Swiper Init
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+        });
+
+        //  Interactive popup section
+
+
+
+
+        function openModal(id) {
+            document.getElementById('modal' + id).style.display = 'block';
+        }
+
+        function closeModal(id) {
+            document.getElementById('modal' + id).style.display = 'none';
+        }
+
+        // Close modal when clicking outside the modal-content
+        window.onclick = function (event) {
+            for (let i = 0; i < 3; i++) {
+                const modal = document.getElementById('modal' + i);
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+        // Custom slider section
+
+        let currentIndex = 0;
+        const slides = document.getElementById('slides');
+        const totalSlides = slides.children.length;
+
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlidePosition();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        }
+
+        // Auto Slide (optional)
+        setInterval(nextSlide, 8000);
+        // taped section
+        AOS.init({ once: true, duration: 1000 });
+
+    </script>
+</body>
+
+</html>
